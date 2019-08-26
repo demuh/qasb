@@ -1,0 +1,135 @@
+html, body {
+    background-color: #2A31C6;
+    color: #FFF;
+    font-family: Vazir;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+    direction: rtl;
+}
+
+*:focus {
+    outline: none;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-left {
+    position: absolute;
+    left: 40px;
+    top: 38px;
+}
+
+.top-right {
+    position: absolute;
+    right: 40px;
+    top: 38px;
+}
+
+.logo > a {
+    color: #FFF;
+    padding: 0 25px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.content {
+    display:flex;
+    color: #FFF;
+    flex-direction: row;
+}
+
+.intro {
+    padding-top: 6em;
+}
+
+.title {
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+.description {
+    max-width: 17em;
+    font-size: 28px;
+    line-height: 40px;
+    color: rgba(255,255,255,.8);
+    margin-bottom: 0;
+}
+
+.box {
+    background: url('/img/walking_girl.png');
+    font-size: 3rem;
+    width: 28rem;
+    height: 19rem;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 40px 33px;
+    margin: 30px;
+    cursor: pointer;
+    transition: all .2s;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+    transform: scale(1.02);
+}
+
+.links > a, a {
+    color: #FFF;
+    padding: 0 25px;
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.form-input {
+    direction: ltr;
+    background: #fff;
+    border: 1px solid #948989;
+    box-sizing: border-box;
+    box-shadow: inset 0px 2px 5px rgba(0,0,0,.1);
+    border-radius: 10px;
+    height: 50px;
+    width: 20em;
+    font-size: 2rem;
+    padding: .6em;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn-link {
+    font-family: vazir;
+    background-color: #000;
+    border-color: #000;
+    border-radius: 10px;
+    color: #FFF;
+    height: 60px;
+    width: 5em;
+    font-size: 20px;
+    line-height: 38px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
