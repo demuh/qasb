@@ -8,10 +8,10 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
-                        <div class="form-group row">
+                        <div>
                             <label for="email" class="description">{{ __('نام کاربری') }}</label>
 
-                            <div class="col-md-6">
+                            <div>
                                 <input id="email" type="email" class="form-input @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')

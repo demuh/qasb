@@ -2,22 +2,19 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
+    <div class="card-body">
+        @if (session('status'))
+            <div class="alert alert-success" role="alert">
+                {{ session('status') }}
             </div>
+        @endif
+
+        <div style="display:flex; flex-direction: row;">
+            <a href="{{ url('/peoples') }}">
+                <div class="peoplebox" style="padding: 7rem; font-size:4rem;">فهرست</div></a>
+            <a href="{{ url('/peoples/create') }}">
+                <div class="peoplebox" style="padding: 7rem; font-size:4rem;">افزودن</div>
+            </a>
         </div>
-    </div>
 </div>
 @endsection

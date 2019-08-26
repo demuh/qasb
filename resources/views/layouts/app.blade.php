@@ -18,6 +18,8 @@
                 <div class="top-left links">
                     @auth
                         <a href="{{ url('/home') }}">صفحۀ اصلی</a>
+                        <a href="{{ url('/peoples') }}">لیست</a>
+                        <a href="{{ url('/peoples/create') }}">افزودن</a>
                     @else
                         <a href="{{ route('login') }}">ورود</a>
 
